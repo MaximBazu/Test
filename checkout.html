@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pureline — оформление заказа</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Pureline</a>
+    <a class="ghost-link" href="index.html">Назад к каталогу</a>
+  </header>
+
+  <main class="container">
+    <section class="checkout">
+      <h1>Оформление заказа</h1>
+      <div class="checkout-grid">
+        <div class="checkout-card">
+          <h2>Детали заказа</h2>
+          <div id="checkoutItems" class="checkout-items"></div>
+          <div class="total" id="checkoutTotal">Итого: 0 ₽</div>
+        </div>
+        <form class="checkout-form">
+          <h2>Контактные данные</h2>
+          <label>
+            Имя
+            <input type="text" placeholder="Анна" required />
+          </label>
+          <label>
+            Телефон
+            <input type="tel" placeholder="+7 900 000-00-00" required />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="hello@pureline.ru" required />
+          </label>
+          <label>
+            Адрес доставки
+            <input type="text" placeholder="Москва, ул. Примерная, 1" required />
+          </label>
+          <button class="primary-button" type="submit">Подтвердить заказ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Мы свяжемся с вами в течение дня.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

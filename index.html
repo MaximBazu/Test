@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pureline — минималистичный бренд</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Pureline</div>
+    <button class="cart-button" id="cartButton" aria-haspopup="dialog" aria-controls="cartModal">
+      <span>Корзина</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="product-grid">
+      <article class="product-card">
+        <div class="product-info">
+          <h2>Свитшот Cloud</h2>
+          <p>Мягкий хлопок, свободный силуэт.</p>
+          <span class="price">4 900 ₽</span>
+        </div>
+        <button class="ghost-button" data-product='{"id":1,"name":"Свитшот Cloud","price":4900}'>В корзину</button>
+      </article>
+      <article class="product-card">
+        <div class="product-info">
+          <h2>Футболка Line</h2>
+          <p>Универсальная база на каждый день.</p>
+          <span class="price">2 200 ₽</span>
+        </div>
+        <button class="ghost-button" data-product='{"id":2,"name":"Футболка Line","price":2200}'>В корзину</button>
+      </article>
+      <article class="product-card">
+        <div class="product-info">
+          <h2>Пальто Soft</h2>
+          <p>Минималистичный крой, шерсть.</p>
+          <span class="price">12 500 ₽</span>
+        </div>
+        <button class="ghost-button" data-product='{"id":3,"name":"Пальто Soft","price":12500}'>В корзину</button>
+      </article>
+      <article class="product-card">
+        <div class="product-info">
+          <h2>Рюкзак Frame</h2>
+          <p>Чистые линии и удобный объём.</p>
+          <span class="price">6 300 ₽</span>
+        </div>
+        <button class="ghost-button" data-product='{"id":4,"name":"Рюкзак Frame","price":6300}'>В корзину</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© Pureline, 2024</span>
+    <a href="checkout.html">Перейти к оформлению</a>
+  </footer>
+
+  <div class="modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="cartTitle">Корзина</h3>
+        <button class="icon-button" id="closeModal" aria-label="Закрыть">×</button>
+      </div>
+      <div class="modal-body" id="cartItems"></div>
+      <div class="modal-footer">
+        <div class="total" id="cartTotal">Итого: 0 ₽</div>
+        <button class="primary-button" id="checkoutButton">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
